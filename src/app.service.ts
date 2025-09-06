@@ -13,6 +13,10 @@ export class AppService {
     const data = this._dataRepository.getData();
     this._otherService.init(data);
 
+    if (process.env.RELEASE_DATA === 'true') {
+      this._otherService.release();
+    }
+
     return data;
   }
 }
