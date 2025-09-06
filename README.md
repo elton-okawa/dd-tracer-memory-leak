@@ -5,6 +5,7 @@
 Minimal setup with following features:
 
 - `dd-tracer` version `5.65.0`
+- `node` version `22.18.0`
 - Nestjs
 - `AppService`, `OtherService` and `DataRepository` with `scope.REQUEST`
 - `AppService` injects both `OtherService` and `DataRepository`
