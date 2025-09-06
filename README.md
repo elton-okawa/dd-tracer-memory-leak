@@ -43,6 +43,12 @@ Run disabling all other integrations and releasing data reference
 DD_TRACE_DISABLED_PLUGINS=express,net,router,dns RELEASE_DATA=true node --inspect --expose-gc dist/main.js
 ```
 
+Making a request:
+
+```
+curl -s localhost:3000 > /dev/null
+```
+
 Profiling:
 
 - Open chrome
